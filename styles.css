@@ -20,15 +20,30 @@ input[type="checkbox"]{
 }
 
 .container{
-    display: none;
+    display:none ;
     width: 350px;
     padding: 20px;
     border-radius: 4px;
     background: rgba(255,255,255,.25);
     border: 2px solid rgba(255,255,255,.18);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #show:checked ~ .container{
     display: block;
 }
 
+.container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    color: red;
+}
